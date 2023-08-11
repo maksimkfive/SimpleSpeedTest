@@ -8,7 +8,8 @@ A simple CMD tool to test your internet speed.
 - User-friendly interface with colored outputs.
 - Single and multi-threaded speed test options.
 
-![image](https://github.com/maksimkfive/SimpleSpeedTest/assets/109814868/c85f30d6-e137-47aa-8df0-f62093206bb2)
+![image](https://github.com/maksimkfive/SimpleSpeedTest/assets/109814868/25b5528d-8957-428e-83f0-9e400f4eee30)
+
 
 
 
