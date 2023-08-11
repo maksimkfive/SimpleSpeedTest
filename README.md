@@ -7,6 +7,7 @@ A simple CMD tool to test your internet speed.
 - Test download and upload speeds.
 - User-friendly interface with colored outputs.
 - Single and multi-threaded speed test options.
+- Output error information in red color when there are problems with connection to the server.
 
 ![image](https://github.com/maksimkfive/SimpleSpeedTest/assets/109814868/25b5528d-8957-428e-83f0-9e400f4eee30)
 
