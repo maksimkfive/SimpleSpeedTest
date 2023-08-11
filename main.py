@@ -10,6 +10,9 @@ def print_green(text):
     """Prints the given text in green color."""
     print(f"{GREEN_TEXT}{text}{RESET_TEXT}")
 
+def print_red(text):
+    print("\033[91m" + text + "\033[0m")
+
 
 def clear_console():
     """Clears the console screen."""
@@ -18,16 +21,21 @@ def clear_console():
 
 def test_speed():
     """Tests and prints the internet speed."""
-    st = speedtest.Speedtest()
-    st.get_best_server()
+    try:
+        st = speedtest.Speedtest()
+        st.get_best_server()
 
-    print_green("Testing download speed...")
-    download_speed = st.download() / 10 ** 6
-    print_green(f"Download speed: {download_speed:.2f} Mbps")
+        print_green("Testing download speed...")
+        download_speed = st.download() / 10 ** 6
+        print_green(f"Download speed: {download_speed:.2f} Mbps")
 
-    print_green("Testing upload speed...")
-    upload_speed = st.upload() / 10 ** 6
-    print_green(f"Upload speed: {upload_speed:.2f} Mbps")
+        print_green("Testing upload speed...")
+        upload_speed = st.upload() / 10 ** 6
+        print_green(f"Upload speed: {upload_speed:.2f} Mbps")
+    except speedtest.ConfigRetrievalError as e:
+        print_red(f"Error connecting to the server. {e}")
+    except Exception as e:
+        print_red(f"An unexpected error occurred. {e}")
 
 
 def get_user_choice():
