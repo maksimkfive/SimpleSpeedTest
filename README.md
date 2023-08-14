@@ -6,10 +6,11 @@ A simple CMD tool to test your internet speed.
 
 - Test download and upload speeds.
 - User-friendly interface with colored outputs.
-- Single and multi-threaded speed test options.
 - Output error information in red color when there are problems with connection to the server.
+- Display information about the testing server including ping, server name.
 
-![image](https://github.com/maksimkfive/SimpleSpeedTest/assets/109814868/25b5528d-8957-428e-83f0-9e400f4eee30)
+![image](https://github.com/maksimkfive/SimpleSpeedTest/assets/109814868/f4d5a05f-9b8d-4e91-9788-30bbcba8e674)
+
 
 
 
@@ -27,12 +28,11 @@ For developers or those running the script version, you'll need to install the `
 
 1. Download the latest release from the [Releases](https://github.com/maksimkfive/SimpleSpeedTest/releases) section.
 2. Run the downloaded file.
-3. Follow the on-screen instructions to choose the test mode and start the speed test.
 
 ## Notes
 
 - The `.exe` file is compiled for Windows. If you need a version for another OS, please raise an issue.
-- Some antivirus software might flag the `.exe` as potential malware due to the way it's compiled. This is a false positive.
+- The test results are stored in the same directory as the executable file.
 
 ## Contributing
 
